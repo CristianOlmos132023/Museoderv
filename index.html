@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Museo de Realidad Virtual - Cristian Olmos</title>
+<script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+<script src="bundle.js"></script>
+<script src="main.js"></script>
+</head>
+
+<body>
+
+<a-scene>
+  <a-assets>
+      
+
+      <video id="video" src="videos/teaser_all_city.mp4"></video> 
+    <img id="floor-texture" src="images/textura_madera.jpg" alt="floor">
+    <img id="wall-texture" src="images/textura_blanca_paredes.png" alt="wall">
+      
+  </a-assets>
+
+   
+    
+
+     <a-box class="floor" material="src: #floor-texture" width="40" height="60" depth="1.2 " position="0 20 0" rotation="-90 0 0"></a-box>
+  <a-plane id="floor" material="src: #floor-texture" width="40" height="60" rotation="-90 0 0"></a-plane>
+  <a-box class="wall" material="src: #wall-texture" width="40" height="40" depth="1.2" position="0 1.6 -30" ></a-box>  
+   <a-box class="wall" material="src: #wall-texture" width="40" height="40" depth="1.2" position="0 1.6 30" ></a-box>  
+    
+    <a-box class="wall" material="src: #wall-texture" width="70" height="40" depth="1.2 " position="-20 1.6 0" rotation="0 90 0"></a-box>   
+    <a-box class="wall" material="src: #wall-texture" width="70" height="40" depth="1.2 " position="20 1.6 0" rotation="0 90 0"></a-box>   
+    
+    
+     <a-box class="wall" src="images/poster_comfort_feet.jpg" width="9" height="12" depth="0.1" position="0 8 -29" rotation="0 0 0" ></a-box>
+    <a-box class="wall" src="images/pagina_comfort_feet.jpg" width="9" height="10" depth="0.1" position="13 8 -29" rotation="0 0 0" ></a-box>
+    <a-box class="wall" src="images/manual_comfort_feet.jpg" width="2" height="2" depth="0.1" position="2 2.3 -26" rotation="0 -20 0" ></a-box>
+    <a-box class="wall" src="images/postales_comfort_feet.jpg" width="2" height="1.3" depth="0.1" position="-2 2.0 -24" rotation="0 20 0" ></a-box>
+    
+     <a-box class="wall" src="images/evento_animate_nmc.jpg" width="9" height="6" depth="0.1" position="-19 10 -20" rotation="0 90 0" ></a-box>
+     <a-box class="wall" src="images/modelo_brochure_nmc.jpg" width="7" height="5" depth="0.1" position="-19 4 -20" rotation="0 90 0" ></a-box>
+    <a-box class="wall" src="images/infografia_nmc.jpg" width="8" height="14" depth="0.1" position="-19 8 -7" rotation="0 90 0" ></a-box>
+    
+    <a-box class="wall" src="images/pintura_cristian_olmos.jpg" width="8" height="10" depth="0.1" position="-19 8 8" rotation="0 90 0" ></a-box>
+    
+     <a-box class="wall" src="images/dibujo_peras.jpg" width="8" height="6" depth="0.1" position="-19 8 18" rotation="0 90 0" ></a-box>
+    
+    <a-box class="table" material="color: #442A08" width="5" height="1.5" depth="2" position="-6 0 27" rotation="0 0 0" ></a-box>
+     <a-box class="wall" src="images/libro_de_mi_vida.png" width="2.6" height="2.6" depth="0.1" position="-6 2 27" rotation="0 0 0" ></a-box>
+    
+      <a-box class="wall" src="images/perspectiva_metro.jpg" width="8" height="10" depth="0.1" position="-6 10 29" rotation="0 0 0" ></a-box>
+    
+    <a-box class="wall" src="images/poster_moderno_de_vaporwave.png" width="8" height="10" depth="0.1" position="4 10 29" rotation="0 0 0" ></a-box>
+    
+     <a-box class="wall" src="images/tigre_poster.jpg" width="6" height="10" depth="0.1" position="-14 10 29" rotation="0 0 0" ></a-box>
+    
+    <a-box class="wall" src="images/fuego_tipografia.jpg" width="6" height="8" depth="0.1" position="12 10 29" rotation="0 0 0" ></a-box>
+    
+    <a-video id="video-player" src="#video" width="16" height="9" position="19 10 15" rotation="0 -90 0"></a-video>
+  <a-box id="play-button" position="19 3 15" width="2" height="1" depth="0.4" color="#FCC200" rotation="0 -90 0" class="clickable">
+    <a-text value="Play" color="#FFF" width="3" position="19 3 15"></a-text>
+    </a-box>
+    
+      <a-box class="wall" src="images/pagina_nueva_all_city.jpg" width="14" height="9" depth="0.1" position="19 10 -1" rotation="0 -90 0" ></a-box>
+    
+      <a-box class="wall" src="./images/taller_acrilico_muchacha.jpg" width="14" height="9" depth="0.1" position="19 10 -19" rotation="0 -90 0" ></a-box>
+    
+     <a-box class="table" material="color: #442A08" width="10" height="2.1" depth="12" position="18 0.25 -18"></a-box>
+    
+     <a-box class="wall" src="images/revista_gourmet.png" alt="revista" width="3" height="4" depth="0.1" position="16 3 -22" rotation="0 70 0" ></a-box>
+    
+    <a-box class="wall" src="images/desayuno_foto.jpg" width="5" height="3.5" depth="0.1" position="16 3 -15" rotation="0 -60 0" ></a-box>
+      
+    <a-box class="wall" src="images/camiseta_nmc.jpg" width="9" height="10" depth="0.1" position="-13 7 -29" rotation="0 0 0" ></a-box>
+    
+    <a-box class="wall" src="images/gorra_nmc.jpg" width="5" height="5" depth="0.1" position="-13 16 -29" rotation="0 0 0" ></a-box>
+      
+    <a-box class="table" material="color: #442A08" width="7" height="2.1" depth="3" position="0 0.25 -25"></a-box>
+    
+    <a-text value="Trabajo Modular de Comfort Feet" color="#000" width="20" position="-6 16 -29" rotation="0 0 0"></a-text>
+    <a-text value="4 Semestre" color="#000" width="20" position="-2 15 -29" rotation="0 0 0"></a-text>
+    <a-text value="Retrato de Cristian Olmos" color="#000" width="20" position="-19 15 13" rotation="0 90 0"></a-text>
+   <a-text value="Trabajo Modular de No mas Colillas" color="#000" width="20" position="-19 16 -14" rotation="0 90 0"></a-text>
+   <a-text value="5 Semestre" color="#000" width="20" position="-19 14 -18" rotation="0 90 0"></a-text> 
+   <a-text value="Edición de Afiches" color="#000" width="20" position="7 18 29" rotation="0 0 0"></a-text>  
+    
+</a-scene>
+
+<script src="main.js"></script>
+     
+</body>
+    
+<script>
+  AFRAME.registerComponent('play-button', {
+    init: function () {
+      var video = document.querySelector('#video-player').components.material.material.map.image;
+      var button = this.el;
+      button.addEventListener('click', function () {
+        video.play();
+        button.style.display = 'none';
+      });
+    }
+  });
+    
+    
+ import * as THREE from 'three';
+
+// init
+
+const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+camera.position.z = 1;
+
+const scene = new THREE.Scene();
+
+const geometry = new THREE.BoxGeometry( 0.2, 0.2, 0.2 );
+const material = new THREE.MeshNormalMaterial();
+
+const mesh = new THREE.Mesh( geometry, material );
+scene.add( mesh );
+
+const renderer = new THREE.WebGLRenderer( { antialias: true } );
+renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setAnimationLoop( animation );
+document.body.appendChild( renderer.domElement );
+
+// animation
+
+function animation( time ) {
+
+	mesh.rotation.x = time / 2000;
+	mesh.rotation.y = time / 1000;
+
+	renderer.render( scene, camera );
+
+}   
+    
+ git clone --depth=1 https://github.com/mrdoob/three.js.git   
+    
+
+
+    
+</script>
+
+    
+    
+    
+</html>
